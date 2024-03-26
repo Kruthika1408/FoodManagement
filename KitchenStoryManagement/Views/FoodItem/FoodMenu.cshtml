@@ -1,0 +1,93 @@
+﻿@model IEnumerable<KitchenStoryManagement.Models.FoodItemModel>
+@{
+    ViewBag.Title = "FoodMenu";
+}
+
+<h2>FoodMenu</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-controller="FoodItem" asp-action="FoodMenu" method="post">
+            <div class="input-group">
+                <input type="text" name="searchString" class="form-control" placeholder="Search Food...">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row mt-4">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.FoodName)</h5>
+                    <p class="card-text">Price: @Html.DisplayFor(modelItem => item.Price)</p>
+                </div>
+                <div class="card-footer">
+                    @Html.ActionLink("Select Item", "SelectedItems", new { id = item.Id }, new { @class = "btn btn-primary stretched-link" })
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@if (!Model.Any())
+{
+    <div class="row">
+        <div class="col">
+            <p>No products found for the given search criteria.</p>
+        </div>
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(Request.Form["searchString"]))
+{
+    <div class="row mt-4">
+        <div class="col">
+            <p>
+                @Html.ActionLink("Back to List", "FoodMenu", null, new { @class = "btn btn-outline-secondary" })
+            </p>
+        </div>
+    </div>
+}
+
+<style>
+    .card {
+        transition: all 0.3s ease;
+        border: 1px solid #dee2e6;
+        border-radius: 0.5rem;
+        background-color: plum;
+        border-radius: 30px 30px;
+        text-align:left;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        font-size: 1.25rem;
+        margin-bottom: 15px;
+    }
+
+    .card-footer {
+        background-color: plum;
+        border-top: none;
+    }
+
+    .btn-stretched-link {
+        height: 2rem;
+        width: 100%;
+    }
+</style>

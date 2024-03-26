@@ -1,0 +1,6 @@
+C:\Users\mmm\source\repos\KitchenStoryManagement\FoodDataAccessLayer\bin\Debug\FoodDataAccessLayer.dll
+C:\Users\mmm\source\repos\KitchenStoryManagement\FoodDataAccessLayer\bin\Debug\FoodDataAccessLayer.pdb
+C:\Users\mmm\source\repos\KitchenStoryManagement\FoodDataAccessLayer\obj\Debug\FoodDataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\mmm\source\repos\KitchenStoryManagement\FoodDataAccessLayer\obj\Debug\FoodDataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\mmm\source\repos\KitchenStoryManagement\FoodDataAccessLayer\obj\Debug\FoodDataAccessLayer.dll
+C:\Users\mmm\source\repos\KitchenStoryManagement\FoodDataAccessLayer\obj\Debug\FoodDataAccessLayer.pdb

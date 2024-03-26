@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "PaymentMode";
+}
+
+<h2>Payment Status</h2>
+The Total Price of @TempData["FoodItem"] = Rs. @TempData["TotalPrice"]
+<br />
+The order will be delivered at @TempData["Address"]
+
+<p>
+    @Html.ActionLink("Order", "OrderSuccess")
+</p>
+

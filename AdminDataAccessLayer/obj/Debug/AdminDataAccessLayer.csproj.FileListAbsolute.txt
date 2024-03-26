@@ -1,0 +1,6 @@
+C:\Users\mmm\source\repos\KitchenStoryManagement\AdminDataAccessLayer\bin\Debug\AdminDataAccessLayer.dll
+C:\Users\mmm\source\repos\KitchenStoryManagement\AdminDataAccessLayer\bin\Debug\AdminDataAccessLayer.pdb
+C:\Users\mmm\source\repos\KitchenStoryManagement\AdminDataAccessLayer\obj\Debug\AdminDataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\mmm\source\repos\KitchenStoryManagement\AdminDataAccessLayer\obj\Debug\AdminDataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\mmm\source\repos\KitchenStoryManagement\AdminDataAccessLayer\obj\Debug\AdminDataAccessLayer.dll
+C:\Users\mmm\source\repos\KitchenStoryManagement\AdminDataAccessLayer\obj\Debug\AdminDataAccessLayer.pdb
